@@ -7,5 +7,23 @@ public abstract class Lekarz {
 	private String imie;
 	private String nazwisko;
 	
-	abstract void lecz();
+	void lecz(){
+		przyjeciePacjeta();
+		zbadaniePacjeta();
+		postawienieDiagnozy();
+		wypisanieSwiadczenia();		
+	}
+
+	void przyjeciePacjeta(){
+		System.out.println("Przyjecie pacjeta przez lekarza");
+	}
+	
+	void zbadaniePacjeta(){
+		System.out.println("Zbadanie pacjenta przez lekarza");
+	}
+	
+	abstract void postawienieDiagnozy();
+	
+	abstract void wypisanieSwiadczenia();
+	
 }
