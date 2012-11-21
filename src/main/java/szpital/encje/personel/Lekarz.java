@@ -3,9 +3,9 @@
 package szpital.encje.personel;
 
 public abstract class Lekarz {
-	private long id;
-	private String imie;
-	private String nazwisko;
+	protected long id;
+	protected String imie;
+	protected String nazwisko;
 	
 	void lecz(){
 		przyjeciePacjeta();
@@ -23,7 +23,30 @@ public abstract class Lekarz {
 	}
 	
 	abstract void postawienieDiagnozy();
-	
 	abstract void wypisanieSwiadczenia();
 	
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getImie() {
+		return imie;
+	}
+
+	public void setImie(String imie) {
+		this.imie = imie;
+	}
+
+	public String getNazwisko() {
+		return nazwisko;
+	}
+
+	public void setNazwisko(String nazwisko) {
+		this.nazwisko = nazwisko;
+	}
 }

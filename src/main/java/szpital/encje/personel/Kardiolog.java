@@ -1,6 +1,11 @@
 package szpital.encje.personel;
 
 public class Kardiolog extends Lekarz {
+	
+	public Kardiolog(String imie, String nazwisko) {
+		this.imie = imie;
+		this.nazwisko = nazwisko;
+	}
 
 	@Override
 	void postawienieDiagnozy() {
