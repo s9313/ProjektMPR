@@ -31,7 +31,7 @@ public class Main {
 //		Lekarz lek2 = new Chirurg("siema");
 //		lekarz.delete(lek2);
 		
-//		System.out.println("Osoba o id 1:"+lekarz.get(1).getImie());
+		System.out.println("Osoba o id 1:"+lekarz.get(1).getImie());
 	
 //		for(Lekarz l: lekarz.getAll()){
 //			System.out.println(l.getImie());
