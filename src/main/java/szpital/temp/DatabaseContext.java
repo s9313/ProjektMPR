@@ -1,4 +1,4 @@
-package szpital.baza;
+package szpital.temp;
 
 import java.util.ArrayList;
 import java.util.List;

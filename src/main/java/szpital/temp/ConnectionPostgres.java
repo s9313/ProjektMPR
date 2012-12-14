@@ -1,4 +1,4 @@
-package szpital.baza;
+package szpital.temp;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

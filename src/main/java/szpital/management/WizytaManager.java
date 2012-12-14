@@ -1,4 +1,4 @@
-package szpital.baza;
+package szpital.management;
 
 import java.util.List;
 

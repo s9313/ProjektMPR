@@ -6,6 +6,7 @@ public abstract class Lekarz {
 	protected long id;
 	protected String imie;
 	protected String nazwisko;
+	protected String specjalizacja;
 	
 	void lecz(){
 		przyjeciePacjeta();
@@ -49,4 +50,13 @@ public abstract class Lekarz {
 	public void setNazwisko(String nazwisko) {
 		this.nazwisko = nazwisko;
 	}
+
+	public String getSpecjalizacja() {
+		return specjalizacja;
+	}
+
+	public void setSpecjalizacja(String specjalizacja) {
+		this.specjalizacja = specjalizacja;
+	}
+	
 }

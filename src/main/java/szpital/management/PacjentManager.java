@@ -1,8 +1,9 @@
-package szpital.baza;
+package szpital.management;
 
 import java.util.List;
 
 import szpital.encje.pacjenci.Pacjent;
+import szpital.temp.DatabaseContext;
 
 public class PacjentManager implements ManagerInterface<Pacjent> {
 
