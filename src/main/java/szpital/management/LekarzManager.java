@@ -16,7 +16,7 @@ import szpital.encje.personel.Neurolog;
 
 public class LekarzManager implements ManagerInterface<Lekarz> {
 
-	Connection conn;
+	private Connection conn;
 	
 	private String url = "jdbc:postgresql://localhost:5432/postgres";
 	private String password = "postgres";
@@ -71,6 +71,18 @@ public class LekarzManager implements ManagerInterface<Lekarz> {
 		}
 	}
 
+	public Connection getConnection() {
+		return conn;
+	}
+	
+	public void clearPersons() {
+		try {
+			deleteLekarzStatement.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	@Override
 	public Lekarz get(long id) {
 		try {
@@ -181,4 +193,5 @@ public class LekarzManager implements ManagerInterface<Lekarz> {
 
 		return false;
 	}
+
 }

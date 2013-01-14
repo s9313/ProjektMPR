@@ -4,10 +4,19 @@ public class Pacjent {
 	private long id;
 	private String imie;
 	private String nazwisko;
-	private String pesel;
 	private String telefon;
-	private Adres adres;
+	private String adres;
 	
+	public Pacjent(String imie, String nazwisko, String adres, String telefon) {
+		this.imie = imie;
+		this.nazwisko = nazwisko;
+		this.adres = adres;
+		this.telefon = telefon;
+	}
+	
+	public Pacjent(String nazwisko) {
+		this.nazwisko = nazwisko;
+	}
 	
 	public long getId() {
 		return id;
@@ -27,22 +36,16 @@ public class Pacjent {
 	public void setNazwisko(String nazwisko) {
 		this.nazwisko = nazwisko;
 	}
-	public String getPesel() {
-		return pesel;
-	}
-	public void setPesel(String pesel) {
-		this.pesel = pesel;
-	}
 	public String getTelefon() {
 		return telefon;
 	}
 	public void setTelefon(String telefon) {
 		this.telefon = telefon;
 	}
-	public Adres getAdres() {
+	public String getAdres() {
 		return adres;
 	}
-	public void setAdres(Adres adres) {
+	public void setAdres(String adres) {
 		this.adres = adres;
 	}
 	@Override
