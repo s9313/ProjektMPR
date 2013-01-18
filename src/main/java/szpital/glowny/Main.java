@@ -7,6 +7,7 @@ import szpital.encje.personel.Chirurg;
 import szpital.encje.personel.Kardiolog;
 import szpital.encje.personel.Lekarz;
 import szpital.encje.personel.Neurolog;
+import szpital.encje.wizyty.Wizyta;
 import szpital.management.*;
 
 
@@ -18,20 +19,25 @@ public class Main {
 	public static void main(String[] args) {
 		ManagerInterface<Lekarz> lekarz = new LekarzManager();
 		ManagerInterface<Pacjent> pacjent = new PacjentManager();
-
+		ManagerInterface<Wizyta> wizyta = new WizytaManager();
+	
+		
+		wizyta.save(new Wizyta("27-12-2013", "15:00", 1, 2));
+		
+//		Wizyta wiz1 = new Wizyta(3);
+//		wizyta.delete(wiz1);
+		
+//		System.out.println("Wizyta o id 4: " + wizyta.get(4).getData_zabiegu());
+		
+//		for(Wizyta w: wizyta.getAll()){
+//			System.out.println(w.getId());
+//		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
+			
 //		pacjent.save(new Pacjent("Michal", "Popowicz", "dsfjksdjf", "564245353"));
 //		pacjent.save(new Pacjent("Krzysiek", "Ibisz", "Warszawa", "343435435"));
-		
+//		
 //		Pacjent pac1 = new Pacjent("Popowicz");
 //		pacjent.delete(pac1);
 		

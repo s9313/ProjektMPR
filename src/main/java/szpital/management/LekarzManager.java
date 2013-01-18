@@ -60,7 +60,7 @@ public class LekarzManager implements ManagerInterface<Lekarz> {
 							"INSERT INTO Lekarz (imie, nazwisko, specjalizacja) " +
 							"VALUES (?, ?, ?)");
 			deleteLekarzStatement=conn
-					.prepareStatement("DELETE From Lekarz WHERE nazwisko=?");
+					.prepareStatement("DELETE From Lekarz where true");
 			getAllLekarzsStatement = conn
 					.prepareStatement("SELECT * FROM Lekarz");
 			getLekarzByIdStatement=conn

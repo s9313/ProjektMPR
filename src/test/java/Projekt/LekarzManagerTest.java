@@ -30,11 +30,11 @@ public class LekarzManagerTest {
 		
 		Kardiolog kardiolog = new Kardiolog(IMIE_1, NAZWISKO_1, SPECJALIZACJA_1);
 		
-		lekarzManager.clearPersons();
-		assertEquals(1,lekarzManager.save(kardiolog));
+//		lekarzManager.clearPersons();
+		lekarzManager.save(kardiolog);
 		
 		List<Lekarz> lekarze = lekarzManager.getAll();
-		Lekarz personRetrieved = lekarze.get(1);
+		Lekarz personRetrieved = lekarze.get(lekarze.size()-1);
 		
 		assertEquals(IMIE_1, personRetrieved.getImie());
 		assertEquals(NAZWISKO_1, personRetrieved.getNazwisko());
