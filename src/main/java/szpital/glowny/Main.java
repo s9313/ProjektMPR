@@ -22,12 +22,12 @@ public class Main {
 		ManagerInterface<Wizyta> wizyta = new WizytaManager();
 	
 		
-		wizyta.save(new Wizyta("27-12-2013", "15:00", 1, 2));
+//		wizyta.save(new Wizyta("27-12-2013", "15:00", 1, 2));
 		
-//		Wizyta wiz1 = new Wizyta(3);
+//		Wizyta wiz1 = new Wizyta(2);
 //		wizyta.delete(wiz1);
 		
-//		System.out.println("Wizyta o id 4: " + wizyta.get(4).getData_zabiegu());
+//		System.out.println("Wizyta o id 4: " + wizyta.get(1).getData_zabiegu());
 		
 //		for(Wizyta w: wizyta.getAll()){
 //			System.out.println(w.getId());

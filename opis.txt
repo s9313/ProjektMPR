@@ -1,0 +1,1 @@
+model aplikacji do zarządzadzania pacjentami, lekarzami i wizytami szpitala
